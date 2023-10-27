@@ -1,0 +1,298 @@
+.container-1 {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8em;
+
+}
+
+.span-txt {
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1;
+  color: #444444;
+}
+
+
+
+.container-2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.disease-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4em;
+
+}
+
+.disease-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.disease-box {
+  width: 25em;
+  height: 37em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+}
+
+.title span {
+
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.disease-wrapper:nth-of-type(1) .disease-box { 
+  background-image: url('../images/disease/ARI.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(2) .disease-box {
+  background-image: url('../images/disease/H1N1.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(3) .disease-box {
+  background-image: url('../images/disease/bird-flu.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(4) .disease-box {
+  background-image: url('../images/disease/chickenpox.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(5) .disease-box {
+  background-image: url('../images/disease/cholera.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(6) .disease-box {
+  background-image: url('../images/disease/dengue.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(7) .disease-box {
+  background-image: url('../images/disease/diarrhea.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(8) .disease-box {
+  background-image: url('../images/disease/diphtheria.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(9) .disease-box {
+  background-image: url('../images/disease/ebola.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(10) .disease-box {
+  background-image: url('../images/disease/HFMD.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(11) .disease-box {
+  background-image: url('../images/disease/Hepatitis-A.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(12) .disease-box {
+  background-image: url('../images/disease/Hepatitis-B.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(13) .disease-box {
+  background-image: url('../images/disease/Hepatitis-C.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(14) .disease-box {
+  background-image: url('../images/disease/hiv-aids.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(15) .disease-box {
+  background-image: url('../images/disease/Influenza.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(16) .disease-box {
+  background-image: url('../images/disease/leprosy.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(17) .disease-box {
+  background-image: url('../images/disease/malaria.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(18) .disease-box {
+  background-image: url('../images/disease/measles.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(19) .disease-box {
+  background-image: url('../images/disease/meningococcemia.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(20) .disease-box {
+  background-image: url('../images/disease/pertussis.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(21) .disease-box {
+  background-image: url('../images/disease/poliomyelitis.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(22) .disease-box {
+  background-image: url('../images/disease/rabies.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(23) .disease-box {
+  background-image: url('../images/disease/sars.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(24) .disease-box {
+  background-image: url('../images/disease/sore-eyes.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(25) .disease-box {
+  background-image: url('../images/disease/tuberculosis.jpg');
+  background-size: cover;
+  /* Adjust according to your preference */
+  background-position: center;
+}
+
+.disease-wrapper:nth-of-type(26) .disease-box {
+  background-image: url('../images/disease/typhoid-fever.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  color: #aaaaaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .container-1 {
+    
+    flex-direction: column;
+    gap: 2em;
+    height: 70vh;
+
+  }
+  
+  .content-title span {
+    font-size: 2em;
+    
+  }
+  
+  .content-img img {
+    width: 15em;
+    height: 11em;
+  }
+
+}

@@ -1,0 +1,133 @@
+.container-1 {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5em;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+}
+
+.content-title span {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1;
+    color: #444444;
+}
+
+.container-2 {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container-2 .table-title {
+    font-size: .4em;
+    font-weight: bold;
+    color: #444444;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.container-table {
+    padding: 2em;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+table {
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    border: 1px solid #444444;
+    padding: 2em;
+    text-align: center;
+}
+
+tr:first-child {
+    border: 1px solid #444444;
+}
+
+tr {
+    border: 1px solid #444444;
+}
+
+td:first-child {
+    border: 1px solid #444444;
+}
+
+td {
+    border: 1px solid #444444;
+}
+
+.table-info {
+    text-align: center;
+    width: 50%;
+    font-size: .8em;
+    padding: 3em;
+}
+
+.table-coordinators {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.table-coordinators h1 {
+    font-size: 1.2em;
+    color: #444444;
+}
+
+.coordinators-names {
+    display: flex;
+    gap: 5em;
+    padding: 2em;
+}
+
+.coordinators-names h2 {
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.coordinators-names h3 {
+    font-size: .8em;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container-1 {
+      
+      flex-direction: column;
+      gap: 2em;
+      height: 70vh;
+      text-align: center;
+  
+    }
+    
+    .content-title span {
+      font-size: 2em;
+      
+    }
+    
+    .content-img img {
+      width: 15em;
+      height: 14em;
+    }
+    
+    .table-info {
+        width: 100%;
+    }
+    
+    
+  
+  
+  }

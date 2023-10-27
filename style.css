@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Home Page */
+
+.logo img{
+    width: 150px;
+    float: left;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+
+header{
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+header.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav ul li a{
+    
+    display: inline-block;
+    color: black;
+    padding: 0 10px;
+    /* padding: 5px 0; */
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+
+    border-bottom-color: dodgerblue;
+}
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  
+  /* Dropdown button */
+  .dropbtn {
+    font-size: 16px;
+    border: 3px solid transparent;
+    height: 1.8em;
+    outline: none;
+    color: #282A3A;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  .dropbtn:hover {
+    border-bottom-color: dodgerblue;
+    transition: 0.05s ease;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  /* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:  dodgerblue;
+  } */
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 1em;
+  }
+  .dropdown-content i {
+    margin-right: 1em;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.btn-login {
+    padding: .7em;
+    font-size: 1em;
+    background-color: transparent;
+    border: 2px solid transparent;;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    border-color: dodgerblue;
+    border-radius: 1em;
+    transition: 0.2s;
+}
+
+
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: black;
+}
+
+
+.main-page {
+
+    display: flex;  
+    
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    
+    background-image: url(images/background.png);
+    background-size: cover;
+}
+
+.smr-logo {
+    padding: 4em;
+}
+
+.sub-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.title-1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FDF248;
+}
+.title-2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+}
+.title-3 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+/* Resident Log in */
+
+
+.blur-bg-overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+
+.show-popup .blur-bg-overlay {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.form-popup      {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: white;
+    border:2px solid white;
+    transform: translate(-50%, -100%);
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.show-popup .form-popup {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s ;
+}
+
+.form-popup .close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #878484;
+    cursor: pointer;
+}
+
+.form-popup .form-box  {
+    display: flex;
+}
+
+.form-box .form-details {
+    max-width: 330px;
+    width: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url(images/loginbg4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-box .form-content {
+    width: 100%;
+    padding: 35px;
+
+}
+
+form .input-field{
+    height: 50px;
+    width:  100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:focus {
+    border-color: #00bcd4;
+}
+
+form .input-field input:is(:focus, :valid) {
+    padding: 16px 15px 0;
+}
+
+form .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label {
+    color: #00bcd4;
+    font-size: 0.75rem;
+    transform: translateY(-120%);  
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+.form-box .forgot-pass{
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: white;
+    cursor: pointer;
+    background: #00bcd4;
+    transition: 0.2s ease;
+}
+
+form button:hover{
+    background: #0097a7;
+}
+
+.form-box .bottom-link {
+    text-align: center;
+}
+
+
+
+
+/*
+    ABOUT US PAGE
+*/
+
+
+
+.label {
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    padding: 1em;
+    color: #282A3A ;
+}
+
+.about-us {
+    color: #282A3A ;
+}
+
+.about-us-content-1, .about-us-content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    margin: 2em;
+
+}
+
+.about-us-img img {
+    width: 25em;
+}
+.about-us-text ul {
+    list-style: none;
+}
+
+.about-us h2, .about-us h3 {
+    margin-top: .5em;
+}
+
+
+.about-us a {
+    color: black;
+    text-decoration: none;
+}
+.about-us a:hover {
+    color: dodgerblue;
+    transition: .5s ease;
+}
+
+/* CONTACT PAGE */
+
+.contact-content {
+    text-align: center;
+    color: #282A3A ;
+}
+
+.contact-content h1 {
+   font-size: 1.3em;
+}
+.contact-content h2 {
+    font-size: 1em;
+    padding: 1em;
+    
+ }
+ .contact-content h2 i {
+    margin-right: .5em;
+ }
+
+
+.socmed-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #282A3A ;
+}
+
+.socmed-content h1 {
+    text-align: center;
+    padding-top: 1.5em;
+
+}
+
+
+.socmed-content nav ul li {
+    display: inline-block;
+    padding: 2em;
+    font-size: large;
+}
+
+.socmed-content nav ul li a {
+    margin-left: 1em;
+    color: #282A3A;
+}
+.socmed-content nav ul li a:hover {
+    color: dodgerblue;
+    transition: .3s ease;
+}
+
+/* footer */
+
+footer {
+    background-color: #282A3A ;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+
+
+@media (max-width: 700px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: white;
+        padding: 1em;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+    .main-page {
+        padding-top: 3em;
+        flex-direction: column;
+    }
+    
+    .smr-logo {
+        padding: 2em;
+    }   
+    
+    .sub-title {
+        text-align: center;
+        font-size: .9em;
+    
+    }
+    .label {
+        justify-content: center
+    }
+    .about-us-content-1  {
+        flex-direction: column;
+        gap: 2em;
+
+    }
+    .about-us-content-2 {
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+    
+    .about-us-img img {
+        width: 20em;
+    }
+    .about-us-text {
+        text-align: center;
+    }
+    .socmed-content {
+        padding-bottom: 2em;
+    }
+    
+    .socmed-content nav ul li {
+        padding: .7em;
+    }
+    
+    .nav-links nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    header {
+        padding: 0 10px;
+    }
+    
+}

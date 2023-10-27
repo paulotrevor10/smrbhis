@@ -1,0 +1,146 @@
+.container-1 {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 3em;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+
+}
+
+.content-title span {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1;
+    color: #444444;
+}
+
+.container-2, .container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    padding: 2em;
+}
+
+.container-misvis{
+    padding: 2em;
+    height: 13em;
+    width: 25em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: #c1dfc4 0px 0px 0px 2px, #deecdd 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.container-misvis h1, .container-objective h1 {
+    color: #444444;
+}
+.container-misvis p {
+    padding-top: 1em;
+    color: #444444;
+    font-size: .9em;
+}
+
+.container-objective{
+    padding: 2em;
+    display: inline-block;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: #c1dfc4 0px 0px 0px 2px, #deecdd 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+.container-objective ul {
+    text-align: start;
+    padding-top: 1em;
+}
+
+.container-objective span {
+    font-size: .9em;
+    font-weight: lighter;
+}
+
+.container-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+.container-concept, .container-instituition{
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.container-concept h1, .container-instituition h1, .container-programs h1 {
+    font-size: 1.4em;
+    color: #444444;
+    text-align: center;
+}
+
+.container-concept p {
+    font-size: 1em;
+    color: #444444
+}
+.container-instituition span {
+    font-size: 1em;
+    color: #444444;
+    font-weight: lighter;
+}
+
+.container-programs {
+    width: 50%;
+    padding-bottom: 5em;
+}
+
+.container-programs ul {
+    padding-top: 1em;
+}
+.container-programs span {
+    font-size: .9em;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .container-1 {
+      
+      flex-direction: column;
+      gap: 2em;
+      height: 70vh;
+      text-align: center;
+  
+    }
+    
+    .content-title span {
+      font-size: 2em;
+      
+    }
+    
+    .content-img img {
+      width: 15em;
+      height: 14em;
+    }
+    
+    .container-2{
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .container-programs, .container-concept, .container-instituition {
+        
+        padding-left: 2em;
+        padding-right: 2em;
+        width: 100%;
+        
+    }
+    
+    
+  
+  
+  }

@@ -1,0 +1,73 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.main::before {
+    content: "";
+    background-image: url('../images/maternity-bg.jpg');
+    opacity: 0.8;
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+
+.maternity-title h1 {
+    color: white;
+    font-size: 4em;
+}
+
+.maternity-content h2 {
+    padding-top: 1em;
+    color: white;
+    font-size: 1.5em; 
+}
+
+.maternity-container .maternity-title h1 {
+    color: #282A3A;
+    font-size: 2.5em;
+    padding-top: 1em;
+    text-align: center;
+}
+.maternity-content-2 {
+    padding: 1em;
+}
+.maternity-content-2 h2 {
+    padding-top: 1em;
+    color: #282A3A;
+    font-size: 1.3em; 
+    text-align: center; 
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    
+    .main {
+        background-position: 60%;
+    }
+    .maternity-title h1 {
+       
+        font-size: 2em;
+        text-align: left;
+    }
+    
+    .maternity-content h2 {
+        font-size: 1em; 
+    }
+    
+    .maternity-container .maternity-title h1 {
+        font-size: 2em;
+    }
+    .maternity-content-2 h2 {
+       
+        font-size: 1em; 
+     
+    }
+}
+
+  

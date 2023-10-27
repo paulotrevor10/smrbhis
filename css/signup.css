@@ -1,0 +1,133 @@
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 5em;
+   
+    
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    width: 70%;
+    border-radius: 1em;
+
+}
+
+.content-1 {
+    height: 40em;
+    flex: 1;
+    background-image: url(../images/signup-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+
+.content-2 {
+    height: 40em;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form-label {
+    align-self: start;
+    padding: 2em;
+}
+
+.form-label h1 {
+    font-weight: medium;
+    color: #444444;
+}
+
+.form-container {}
+
+.form-group input {
+    padding: 1em;
+    margin-top: 1.2em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    border-radius: .8em;
+
+}
+
+
+
+.form-group .inp-contact {}
+
+.form-group .inp {
+    width: 100%;
+}
+
+.checkbox-container {
+    padding: 1em;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .container-1 {
+        padding-top: 15em;
+
+    }
+
+    .container-wrapper {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content-1 {
+        display: none;
+
+    }
+
+    .content-2 {
+        height: 40em;
+        padding: 1em;
+    }
+
+    .form-label {
+        align-self: center;
+        padding: 1em;
+    }
+
+    .form-label h1 {
+        font-weight: small;
+        color: #444444;
+    }
+
+
+
+    .form-group input {
+        padding: 1em;
+        margin-top: 1.2em;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border: none;
+        border-radius: .8em;
+        width: 100%;
+
+    }
+
+
+
+
+    .checkbox-container {
+        display: flex;
+        gap: .6em;
+    }
+
+    .checkbox-label {
+        font-size: .7em;
+    }
+
+
+
+}
